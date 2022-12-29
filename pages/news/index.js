@@ -12,7 +12,7 @@ import ru from "../../locales/ru";
 import kz from "../../locales/kz";
 import en from "../../locales/en";
 const News = ({ data }) => {
-  const [noOfElement, setOfElement] = useState(3);
+  const [noOfElement, setOfElement] = useState(9);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ru" ? ru : locale === "kz" ? kz : locale === "en" ? en : null;
