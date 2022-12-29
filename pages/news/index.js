@@ -12,14 +12,14 @@ import ru from "../../locales/ru";
 import kz from "../../locales/kz";
 import en from "../../locales/en";
 const News = ({ data }) => {
-  // const [noOfElement, setOfElement] = useState(9);
+  const [noOfElement, setOfElement] = useState(3);
   const router = useRouter();
   const { locale } = router;
   const t = locale === "ru" ? ru : locale === "kz" ? kz : locale === "en" ? en : null;
-  // const loadMore = () => {
-  //   setOfElement(noOfElement + noOfElement);
-  // };
-  // const slice = data.slice(0, noOfElement);
+  const loadMore = () => {
+    setOfElement(noOfElement + noOfElement);
+  };
+  const slice = data.slice(0, noOfElement);
   console.log(data);
   return (
     <div>
@@ -33,29 +33,19 @@ const News = ({ data }) => {
       <Category />
       <div className="container mx-auto py-5">
         <div className="grid grid-cols-3 gap-5">
-        {data.map((item) => (
+        {slice.map((item) => (
         <Post key={item.id} data={data} item={item} />
       ))}
         </div>
       </div>
       
       <div className="my-11 flex justify-center">
-        {/* <ul className="flex gap-5">
-          {[...Array(data.count)].map((item, i) => (
-            <li
-              key={i}
-              className="border border-[#172F42] rounded-full w-[45px] h-[45px] text-center leading-10 cursor-pointer hover:bg-[#172F42] hover:text-white duration-200"
-            >
-              {i + 1}
-            </li>
-          ))}
-        </ul> */}
-        {/* <button
+        <button
           onClick={loadMore}
           className="bg-[#306194] mt-5 py-4 px-10 rounded-lg text-white font-bold text-xl md:w-1/4 w-full hover:bg-sky-900 duration-300"
         >
           {t.loadmore}
-        </button> */}
+        </button>
       </div>
       <Footer />
     </div>
