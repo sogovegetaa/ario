@@ -8,6 +8,7 @@ import kz from "../../locales/kz";
 import FlagIcon from "@mui/icons-material/Flag";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 import en from "../../locales/en";
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 const About = () => {
   const router = useRouter();
   const { locale } = router;
@@ -90,6 +91,57 @@ const About = () => {
           <div className="grid grid-cols-2 gap-10 container mx-auto pt-8 text-md pb-8 items-center">
             <p className="leading-6">{t.relevance1}</p>
             <p className="leading-6">{t.relevance2}</p>
+          </div>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 container mx-auto mb-5">
+        <div className="md:cols-span-1 col-span-1 hidden md:block ">
+          <YMaps>
+            <Map
+              width="400px"
+              height="200px"
+              defaultState={{
+                center: [51.120637, 71.472093],
+                zoom: 15,
+                controls: ["zoomControl", "fullscreenControl"],
+              }}
+              modules={["control.ZoomControl", "control.FullscreenControl"]}
+            >
+              <Placemark defaultGeometry={[51.120637, 71.472093]} />
+            </Map>
+          </YMaps>
+        </div>
+        <div>
+          <div className="container mx-auto text-3xl font-bold">{t.rek}</div>
+          <div className="container mx-auto font-semibold text-md md:text-md py-5">
+            <table className="table-auto mb-10">
+              <tbody>
+                <tr>
+                  <td>Компания</td>
+                  <td>{t.ariocompanyname}</td>
+                </tr>
+                <tr>
+                  <td>{t.adres}</td>
+                  <td>{t.arioadress}</td>
+                </tr>
+                <tr>
+                  <td>БИН (ИИН)</td>
+                  <td>170140015381</td>
+                </tr>
+                <tr>
+                  <td>Филиал </td>
+                  <td>АО "Kaspi Bank" в г.Алматы</td>
+                </tr>
+                <tr>
+                  <td>ИИК</td>
+                  <td>KZ28722S000001280902</td>
+                </tr>
+                <tr>
+                  <td>БИК</td>
+                  <td>CASPKZKA </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

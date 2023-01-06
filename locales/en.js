@@ -229,4 +229,6 @@ export default {
   usnumber: "+7 707 842 7058 (Astana)",
   arionumber: "+7 (707) 202 94 53  (Astana)",
   rek: "Bank details:",
+  ariocompanyname: "«Association of Legal Entities » Association for the Development and Research of Education",
+  arioadress: "050036, Republic of Kazakhstan, Almaty, Auezovsky district, Mamyr-4 microdistrict, house 145 B, 3rd floor, office 2."
 };
