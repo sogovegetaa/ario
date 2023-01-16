@@ -44,7 +44,7 @@ export default function Home({ data }) {
       <Mainnav />
 
       <div className="bg-[url('../public/bg-1.png')] bg-no-repeat bg-center bg-cover py-4">
-        <div className="container grid grid-cols-2 mx-auto">
+        <div className="container grid grid-cols-1 mx-auto md:grid-cols-2">
           <div className="flex flex-col justify-center col-span-1">
             <h1
               dangerouslySetInnerHTML={{ __html: `${t.hometitle}` }}
@@ -61,9 +61,9 @@ export default function Home({ data }) {
       </div>
       <section className="bg-[#f3f5fa] py-3 text-center">
         <div className="container mx-auto">
-          <div className="grid grid-cols-9">
-            <div></div>
-            <div></div>
+          <div className="grid grid-cols-3 md:grid-cols-9">
+            <div className="hidden md:block"></div>
+            <div className="hidden md:block"></div>
             <div className="flex items-center justify-center">
               <Image
                 src="/logo-ru.png"
@@ -73,7 +73,7 @@ export default function Home({ data }) {
                 alt=""
               />
             </div>
-            <div></div>
+            <div className="hidden md:block"></div>
             <div className="flex items-center justify-center">
               <Link href="/talimger">
                 {" "}
@@ -86,7 +86,7 @@ export default function Home({ data }) {
                 />
               </Link>
             </div>
-            <div></div>
+            <div className="hidden md:block"></div>
             <div className="flex items-center justify-center">
               <Link href="/ystaz">
                 {" "}
@@ -99,7 +99,7 @@ export default function Home({ data }) {
                 />
               </Link>
             </div>
-            <div></div>
+            <div className="hidden md:block"></div>
           </div>
         </div>
       </section>
@@ -109,8 +109,8 @@ export default function Home({ data }) {
         </h1>
       </div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 pt-5 pb-10">
-          <div className="mx-auto text-2xl">
+        <div className="grid grid-cols-1 pt-5 pb-10 md:grid-cols-2">
+          <div className="flex flex-wrap mx-auto text-2xl md:flex-col">
             <p className="py-1">
               <DoneAllIcon color="primary" sx={{ marginRight: "15px" }} />
               {t.exerr1}

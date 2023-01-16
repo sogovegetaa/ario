@@ -27,34 +27,34 @@ const Mainnav = () => {
     {name:`${t.nav7}`,link:"/ystaz"},
     {name:`${t.nav8}`,link:"/contacts"},
   ];
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-[#172F42] sticky top-0 drop-shadow shadow-dark-600 z-50">
-        <div className='container mx-auto md:py-3 py-7'>
-        <div className="text-3xl md:hidden relative">
+        <div className='container mx-auto md:py-3 pt-7 pb-[2.75rem]'>
+        <div className="relative text-3xl md:hidden">
           {open ? (
+            <CloseIcon
+            sx={{ position: "absolute", right: "2rem", cursor: "pointer" , zIndex: '11'}}
+            onClick={() => setOpen(!open)}
+          />
+          ) : (
             <MenuIcon
               sx={{ position: "absolute", right: "2rem", cursor: "pointer", zIndex: '11' }}
               onClick={() => setOpen(!open)}
             />
-          ) : (
-            <CloseIcon
-              sx={{ position: "absolute", right: "2rem", cursor: "pointer" , zIndex: '11'}}
-              onClick={() => setOpen(!open)}
-            />
           )}
         </div>
-        <ul className={`md:flex md:justify-between gap-4 md:static bg-[#172F42] absolute left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? "top-[-540px]" : "top-[18rem] z-10"}`}>
+        <ul className={`md:flex md:justify-between gap-4 md:static bg-[#172F42] absolute left-0 w-full md:w-auto md:pl-0 pl-9 ${open ? "" : "top-[-1500px] z-10"}`}>
             {Links.map((item)=>(
-              <li key={item.name} className='text-white font-semibold hover:scale-105 duration-300 cursor-pointer md:my-0 my-7'><Link href={`${item.link}`}>{item.name}</Link></li>
+              <li key={item.name} className='font-semibold text-white duration-300 cursor-pointer hover:scale-105 md:my-0 my-7'><Link href={`${item.link}`}>{item.name}</Link></li>
             ))}
             
-            <li className='text-white font-semibold hover:scale-105 duration-300 cursor-pointer md:my-0 my-7'>
+            <li className='font-semibold text-white duration-300 cursor-pointer hover:scale-105 md:my-0 my-7'>
             <select
             onChange={changeLanguage}
             defaultValue={locale}
-            className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+            className="text-lg tracking-wide text-white bg-transparent text-shadow-sm"
           >
             <option className="text-black" value="ru">RU</option>
             <option className="text-black" value="kz">QAZ</option>
