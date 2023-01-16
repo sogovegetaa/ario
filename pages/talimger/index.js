@@ -95,7 +95,7 @@ const Talimger = () => {
             </li>
             <li className="py-2 pl-5">
               • {t.document2}
-              <Link href="#" className="duration-300 hover:text-blue-500">
+              <Link href="/document/protocol" className="duration-300 hover:text-blue-500">
                 [{t.document}]
               </Link>
             </li>
@@ -127,11 +127,11 @@ const Talimger = () => {
         <div className="bg-[#275274] bg-opacity-70 container mx-auto">
           <ul className="p-3 font-semibold text-white text-md">
             <li className=" text-md">{t.candidate1}:</li>
-            <li className="ml-5  text-md">• {t.candidate2};</li>
-            <li className="ml-5  text-md">• {t.candidate3};</li>
-            <li className="ml-5  text-md">• {t.candidate4};</li>
-            <li className="ml-5  text-md">• {t.candidate5};</li>
-            <li className="ml-5  text-md">• {t.candidate6}.</li>
+            <li className="ml-5 text-md">• {t.candidate2};</li>
+            <li className="ml-5 text-md">• {t.candidate3};</li>
+            <li className="ml-5 text-md">• {t.candidate4};</li>
+            <li className="ml-5 text-md">• {t.candidate5};</li>
+            <li className="ml-5 text-md">• {t.candidate6}.</li>
           </ul>
         </div>
       </div>
