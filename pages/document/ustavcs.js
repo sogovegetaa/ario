@@ -5,7 +5,7 @@ function Ustav() {
   return (
     <div>
         <Navbar/>
-        <iframe src="/documents/ustavcs.pdf" frameborder="0" className='w-full h-[100vh]'></iframe>
+        <iframe src="/documents/polojenie.pdf" frameborder="0" className='w-full h-[100vh]'></iframe>
     </div>
   )
 }

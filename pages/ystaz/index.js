@@ -22,7 +22,7 @@ const Ystaz = () => {
       <Navbar />
       <div className="bg-[url('../public/title-bg.png')] bg-no-repeat bg-center bg-cover">
         <div className="container mx-auto">
-          <h1 className="text-xl font-bold py-8"><div className="flex items-center"><div>Фонд “Ұстаз”</div><Image src="/ystaz-logo.png" width={175} height={75} /> </div> </h1>
+          <h1 className="py-8 text-xl font-bold"><div className="flex items-center"><div>Фонд “Ұстаз”</div><Image src="/ystaz-logo.png" width={175} height={75} /> </div> </h1>
         </div>
       </div>
       <div className="bg-[#A9BAC7] py-[44px] md:px-[132px] px-0 m-5">
@@ -34,35 +34,35 @@ const Ystaz = () => {
         </div>
       </div>
       <div className="bg-[#275274] py-10">
-        <div className="text-white text-center text-2xl py-10 font-bold">
+        <div className="py-10 text-2xl font-bold text-center text-white">
         {t.ustazabout}
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-10 container mx-auto">
-          <p className="text-white font-semibold text-xl">
+        <div className="container grid grid-cols-1 gap-10 mx-auto md:grid-cols-3">
+          <p className="text-xl font-semibold text-white">
           {t.ustazabout1}
           </p>
-          <p className="text-white font-semibold text-xl">
+          <p className="text-xl font-semibold text-white">
           {t.ustazabout2}
           </p>
-          <p className="text-white font-semibold text-xl">
+          <p className="text-xl font-semibold text-white">
           {t.ustazabout3}
           </p>
         </div>
       </div>
-      <div className="bg-white py-10">
-        <p className="font-bold text-2xl text-center pb-8">{t.mission} </p>
+      <div className="py-10 bg-white">
+        <p className="pb-8 text-2xl font-bold text-center">{t.mission} </p>
         <p className="container mx-auto text-xl font-semibold underline">
         {t.mission1}
         </p>
       </div>
       <div className="bg-[url('../public/contact-bg.png')] bg-no-repeat bg-center bg-cover mb-10">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold py-8">{t.outcontact} «ҰСТАЗ»</h1>
+          <h1 className="py-8 text-4xl font-bold">{t.outcontact} «ҰСТАЗ»</h1>
         </div>
       </div>
       <div className="container mx-auto">
         <div className="grid grid-cols-3 gap-5">
-          <div className=" border-r-2 border-gray-200 ">
+          <div className="border-r-2 border-gray-200 ">
             <div className="flex flex-col text-center">
               <div>
                 <LocationOnIcon fontSize="large" color="info" />
@@ -70,7 +70,7 @@ const Ystaz = () => {
               <div>{t.usadres}</div>
             </div>
           </div>
-          <div className=" border-r-2 border-gray-200 ">
+          <div className="border-r-2 border-gray-200 ">
             <div className="flex flex-col text-center">
               <div>
                 <PhoneIcon fontSize="large" color="info" />
@@ -78,7 +78,7 @@ const Ystaz = () => {
               <div><Link href="tel:87078427058">{t.usnumber}</Link></div>
             </div>
           </div>
-          <div className=" border-r-2 border-gray-200 ">
+          <div className="border-r-2 border-gray-200 ">
             <div className="flex flex-col text-center">
               <div>
                 <EmailIcon fontSize="large" color="info" />
@@ -89,8 +89,8 @@ const Ystaz = () => {
         </div>
       </div>
       <div class="container my-24 px-6 mx-auto"></div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-10 container mx-auto mb-5">
-        <div className="md:cols-span-1 col-span-1 hidden md:block">
+      <div className="container grid grid-cols-1 gap-10 mx-auto mb-5 md:grid-cols-2">
+        <div className="hidden col-span-1 md:cols-span-1 md:block">
           <YMaps>
             <Map
               width="400px"
@@ -110,8 +110,8 @@ const Ystaz = () => {
           <div className="container mx-auto text-3xl font-bold">
             {t.rek}
           </div>
-          <div className="container mx-auto font-semibold text-md md:text-md py-5">
-            <table className="table-auto mb-10">
+          <div className="container py-5 mx-auto font-semibold text-md md:text-md">
+            {/* <table className="mb-10 table-auto">
               <tbody>
                 <tr>
                   <td>Компания</td>
@@ -144,7 +144,7 @@ const Ystaz = () => {
                   <td>CASPKZKA</td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
           </div>
         </div>
       </div>

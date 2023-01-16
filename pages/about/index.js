@@ -114,7 +114,7 @@ const About = () => {
         <div>
           <div className="container mx-auto text-3xl font-bold">{t.rek}</div>
           <div className="container py-5 mx-auto font-semibold text-md md:text-md">
-            <table className="mb-10 table-auto">
+            {/* <table className="mb-10 table-auto">
               <tbody>
                 <tr>
                   <td>Компания</td>
@@ -141,7 +141,7 @@ const About = () => {
                   <td>CASPKZKA </td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
           </div>
         </div>
       </div>
