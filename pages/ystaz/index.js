@@ -128,7 +128,7 @@ const Ystaz = () => {
         <div>
           <div className="container mx-auto text-3xl font-bold">{t.rek}</div>
           <div className="container py-5 mx-auto font-semibold text-md md:text-md">
-            {/* <table className="mb-10 table-auto">
+            <table className="mb-10 table-auto">
               <tbody>
                 <tr>
                   <td>Компания</td>
@@ -142,7 +142,7 @@ const Ystaz = () => {
                 </tr>
                 <tr>
                   <td>БИН (ИИН)</td>
-                  <td>XXXXXXXXXXXX</td>
+                  <td>221240035450</td>
                 </tr>
                 <tr>
                   <td>Банк</td>
@@ -161,7 +161,7 @@ const Ystaz = () => {
                   <td>CASPKZKA</td>
                 </tr>
               </tbody>
-            </table> */}
+            </table> 
           </div>
         </div>
       </div>

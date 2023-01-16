@@ -207,7 +207,7 @@ const Talimger = () => {
         <div>
           <div className="container mx-auto text-3xl font-bold">{t.rek}</div>
           <div className="container py-5 mx-auto font-semibold text-md md:text-md">
-            {/* <table className="mb-10 table-auto">
+            <table className="mb-10 table-auto">
               <tbody>
                 <tr>
                   <td>Компания</td>
@@ -215,11 +215,11 @@ const Talimger = () => {
                 </tr>
                 <tr>
                   <td>{t.adres}</td>
-                  <td>Астана, XXXX, дом XX</td>
+                  <td>Юр. адрес: Нур-Султан, Е 653, дом 1</td>
                 </tr>
                 <tr>
                   <td>БИН (ИИН)</td>
-                  <td>XXXXXXXXXXXX</td>
+                  <td>200540006464</td>
                 </tr>
                 <tr>
                   <td>Банк</td>
@@ -227,18 +227,15 @@ const Talimger = () => {
                 </tr>
                 <tr>
                   <td>ИИК</td>
-                  <td>KZXXXXXXXXXXXXXXXXXX</td>
+                  <td>KZ69722S000010295829</td>
                 </tr>
-                <tr>
-                  <td>KZTКБе</td>
-                  <td>XX</td>
-                </tr>
+                
                 <tr>
                   <td>БИК</td>
-                  <td>CASPKZKA</td>
+                  <td>19</td>
                 </tr>
               </tbody>
-            </table> */}
+            </table> 
           </div>
         </div>
       </div>
