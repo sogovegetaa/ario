@@ -27,19 +27,19 @@ const News = ({ data }) => {
       <Navbar />
       <div className="bg-[url('../public/title-bg.png')] bg-no-repeat bg-center bg-cover">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold py-8">{t.nav4}</h1>
+          <h1 className="py-8 text-4xl font-bold">{t.nav4}</h1>
         </div>
       </div>
       <Category />
-      <div className="container mx-auto py-5">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="container py-5 mx-auto">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-3">
         {slice.map((item) => (
         <Post key={item.id} data={data} item={item} />
       ))}
         </div>
       </div>
       
-      <div className="my-11 flex justify-center">
+      <div className="flex justify-center my-11">
         <button
           onClick={loadMore}
           className="bg-[#306194] mt-5 py-4 px-10 rounded-lg text-white font-bold text-xl md:w-1/4 w-full hover:bg-sky-900 duration-300"
